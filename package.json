@@ -28,7 +28,7 @@
     "PACKAGE_NAME": "lib/cli.js"
   },
   "devDependencies": {
-    "babel-cli": "6.4",
+    "babel-cli": "6.4.5",
     "babel-core": "6.4",
     "babel-eslint": "5.0.0-beta6",
     "babel-plugin-module-alias": "1.1.1",
