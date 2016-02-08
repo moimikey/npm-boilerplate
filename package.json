@@ -45,7 +45,7 @@
     "tape": "4.4.0"
   },
   "dependencies": {
-    "babel-runtime": "6.3.19"
+    "babel-runtime": "6.5.0"
   },
   "optionalDependencies": {
     "bluebird": "3.2.2",
