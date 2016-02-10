@@ -1,6 +1,6 @@
 .eslintcache
 .DS*
 *.log
-node_modules
-lib
-build
+node_modules/
+lib/
+build/
