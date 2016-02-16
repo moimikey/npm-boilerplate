@@ -45,7 +45,7 @@
     "node-sass": "^3.4.2",
     "nodemon": "^1.8.1",
     "rimraf": "^2.5.1",
-    "tap": "^5.4.4"
+    "tap": "^5.4.5"
   },
   "dependencies": {
     "bluebird": "^3.3.1",
