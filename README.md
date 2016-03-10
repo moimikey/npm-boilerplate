@@ -11,5 +11,5 @@
 [npm-deps-image]: https://img.shields.io/david/moimikey/PACKAGE_NAME.svg
 [npm-devdeps-url]: https://david-dm.org/moimikey/PACKAGE_NAME
 [npm-devdeps-image]: https://img.shields.io/david/dev/moimikey/PACKAGE_NAME.svg
-[travis-url]: https://travis-ci.org/moimikey/PACKAGE_NAME.svg?branch=master
-[travis-image]: https://travis-ci.org/moimikey/PACKAGE_NAME
+[travis-url]: https://travis-ci.org/moimikey/PACKAGE_NAME
+[travis-image]: https://travis-ci.org/moimikey/PACKAGE_NAME.svg?branch=master
