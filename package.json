@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "babel-cli": "6.6.5",
-    "babel-core": "6.6.5",
+    "babel-core": "6.7.0",
     "babel-eslint": "5.0.0",
     "babel-plugin-transform-catch-promise": "0.1.2",
     "babel-plugin-transform-decorators-legacy": "1.3.4",
@@ -28,11 +28,11 @@
     "babel-preset-es2015": "6.6.0",
     "babel-preset-stage-0": "6.5.0",
     "babel-runtime": "6.6.1",
-    "babel-tape-runner": "2.0.1",
+    "babel-tap": "5.0.0",
     "eslint": "2.2.0",
     "eslint-plugin-babel": "3.1.0",
-    "rimraf": "2.5.2",
-    "tape": "4.5.1"
+    "npm-run-all": "1.5.2",
+    "rimraf": "2.5.2"
   },
   "dependencies": {
     "bluebird": "3.3.4",
@@ -43,11 +43,11 @@
     "whatwg-fetch": "0.11.0"
   },
   "scripts": {
-    "prebuild": "npm run lint test clean",
+    "prebuild": "npm-run-all --sequential lint test clean",
     "build": "babel --ignore *.spec.js -d lib src",
     "clean": "rimraf {lib,build}/**/*.{js,log}",
     "lint": "eslint --cache src",
     "prepublish": "npm run build",
-    "test": "babel-tape-runner src/**/*.spec.js"
+    "test": "babel-tap src/**/*.spec.js"
   }
 }
