@@ -1,19 +1,19 @@
 {
-  "name": "GITHUB_PROJECT_TITLE",
+  "name": "PACKAGE_NAME",
   "version": "1.0.0",
-  "description": "GITHUB_PROJECT_DESCRIPTION",
+  "description": "",
   "main": "index.js",
   "preferGlobal": false,
   "author": "Michael Scott Hertzberg <mshertzberg@gmail.com> (http://hertzber.gs/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moimikey/GITHUB_PROJECT_TITLE.git"
+    "url": "https://github.com/moimikey/PACKAGE_NAME.git"
   },
   "bugs": {
-    "url": "https://github.com/moimikey/GITHUB_PROJECT_TITLE/issues"
+    "url": "https://github.com/moimikey/PACKAGE_NAME/issues"
   },
-  "homepage": "https://github.com/moimikey/GITHUB_PROJECT_TITLE",
+  "homepage": "https://github.com/moimikey/PACKAGE_NAME",
   "keywords": [],
   "browser": {
     "fs": false
@@ -45,7 +45,7 @@
   "scripts": {
     "prebuild": "npm-run-all --sequential lint test clean",
     "build": "babel --ignore *.spec.js -d lib src",
-    "clean": "rimraf {lib,build}/**/*.{js,log}",
+    "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
     "lint": "eslint --cache src",
     "prepublish": "npm run build",
     "test": "babel-tap src/**/*.spec.js"
