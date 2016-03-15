@@ -18,10 +18,19 @@
   "browser": {
     "fs": false
   },
+  "scripts": {
+    "prebuild": "npm-run-all --sequential lint test clean",
+    "build": "babel --ignore *.spec.js -d lib src",
+    "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
+    "lint": "eslint --cache src benchmark",
+    "prepublish": "npm-run-all --sequential build",
+    "test": "babel-tap src/**/*.spec.js",
+    "benchmark": "babel-node ./benchmark"
+  },
   "devDependencies": {
     "babel-cli": "6.6.5",
-    "babel-core": "6.7.0",
-    "babel-eslint": "5.0.0",
+    "babel-core": "6.7.2",
+    "babel-eslint": "6.0.0-beta.6",
     "babel-plugin-transform-catch-promise": "0.1.2",
     "babel-plugin-transform-decorators-legacy": "1.3.4",
     "babel-plugin-transform-runtime": "6.6.0",
@@ -29,9 +38,10 @@
     "babel-preset-stage-0": "6.5.0",
     "babel-runtime": "6.6.1",
     "babel-tap": "5.0.0",
-    "eslint": "2.2.0",
+    "benchmark": "2.1.0",
+    "eslint": "2.4.0",
     "eslint-plugin-babel": "3.1.0",
-    "npm-run-all": "1.5.2",
+    "npm-run-all": "1.5.3",
     "rimraf": "2.5.2",
     "tap": "5.7.0"
   },
@@ -42,13 +52,5 @@
     "lodash": "4.6.1",
     "lru-memoize": "1.0.1",
     "whatwg-fetch": "0.11.0"
-  },
-  "scripts": {
-    "prebuild": "npm-run-all --sequential lint test clean",
-    "build": "babel --ignore *.spec.js -d lib src",
-    "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
-    "lint": "eslint --cache src",
-    "prepublish": "npm run build",
-    "test": "babel-tap src/**/*.spec.js"
   }
 }
