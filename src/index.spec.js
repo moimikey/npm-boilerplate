@@ -1,4 +1,4 @@
-import tap from 'tap'
+import * as tap from 'tap'
 const it = tap.test
 const eventuallyTrue = () =>
   new Promise(resolve => {
