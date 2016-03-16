@@ -1,7 +1,7 @@
 .eslintcache
 .DS*
-*.log
 node_modules/
 lib/
 build/
 .idea/
+benchmark/
