@@ -39,18 +39,20 @@
     "babel-runtime": "6.6.1",
     "babel-tap": "5.0.0",
     "benchmark": "2.1.0",
-    "eslint": "2.5.0",
+    "eslint": "2.4.0",
     "eslint-plugin-babel": "3.1.0",
     "npm-run-all": "1.6.0",
     "rimraf": "2.5.2",
     "tap": "5.7.0"
   },
   "dependencies": {
+    "babel-core": "6.7.4",
     "bluebird": "3.3.4",
     "especially": "2.0.1",
     "hasdom": "0.0.4",
     "lodash": "4.6.1",
     "lru-memoize": "1.0.1",
+    "npm-run-all": "1.6.0",
     "whatwg-fetch": "0.11.0"
   }
 }
