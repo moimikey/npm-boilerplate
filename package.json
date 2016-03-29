@@ -52,7 +52,7 @@
     "hasdom": "0.0.4",
     "lodash": "4.6.1",
     "lru-memoize": "1.0.1",
-    "npm-run-all": "1.6.0",
+    "npm-run-all": "1.7.0",
     "whatwg-fetch": "0.11.0"
   }
 }
