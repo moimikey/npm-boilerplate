@@ -50,7 +50,7 @@
     "bluebird": "3.3.4",
     "especially": "2.0.1",
     "hasdom": "0.0.4",
-    "lodash": "4.7.0",
+    "lodash": "4.8.2",
     "lru-memoize": "1.0.1",
     "npm-run-all": "1.7.0",
     "whatwg-fetch": "0.11.0"
