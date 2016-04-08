@@ -28,7 +28,7 @@
     "benchmark": "babel-node ./benchmark"
   },
   "devDependencies": {
-    "babel-cli": "6.6.5",
+    "babel-cli": "6.7.5",
     "babel-core": "6.7.4",
     "babel-eslint": "6.0.2",
     "babel-plugin-transform-catch-promise": "0.1.2",
