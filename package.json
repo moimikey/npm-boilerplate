@@ -46,7 +46,7 @@
     "tap": "5.7.1"
   },
   "dependencies": {
-    "babel-core": "6.7.5",
+    "babel-core": "6.7.6",
     "bluebird": "3.3.4",
     "especially": "2.0.1",
     "hasdom": "0.0.4",
