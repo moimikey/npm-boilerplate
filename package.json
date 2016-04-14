@@ -14,9 +14,7 @@
     "url": "https://github.com/moimikey/PACKAGE_NAME/issues"
   },
   "homepage": "https://github.com/moimikey/PACKAGE_NAME",
-  "keywords": [
-
-  ],
+  "keywords": [],
   "browser": {
     "fs": false
   },
@@ -51,7 +49,7 @@
     "bluebird": "3.3.5",
     "especially": "2.0.1",
     "hasdom": "0.0.4",
-    "lodash": "4.11.0",
+    "lodash": "4.11.1",
     "lru-memoize": "1.0.1",
     "npm-run-all": "1.7.0",
     "whatwg-fetch": "0.11.0"
