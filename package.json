@@ -24,7 +24,8 @@
     "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
     "lint": "eslint --cache src benchmark",
     "prepublish": "npm-run-all --sequential build",
-    "test": "babel-tap src/**/*.spec.js",
+    "test": "babel-tap -Rdump src/**/*.spec.js",
+    "test:watch": "nodemon -w src --exec babel-tap -Rspec src/**/*.spec.js",
     "benchmark": "babel-node ./benchmark"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "benchmark": "2.1.0",
     "eslint": "2.6.0",
     "eslint-plugin-babel": "3.2.0",
+    "nodemon": "1.9.1",
     "npm-run-all": "1.6.0",
     "rimraf": "2.5.2",
     "tap": "5.7.1"
