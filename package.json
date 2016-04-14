@@ -14,7 +14,9 @@
     "url": "https://github.com/moimikey/PACKAGE_NAME/issues"
   },
   "homepage": "https://github.com/moimikey/PACKAGE_NAME",
-  "keywords": [],
+  "keywords": [
+
+  ],
   "browser": {
     "fs": false
   },

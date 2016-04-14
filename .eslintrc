@@ -2,7 +2,7 @@
   "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "rules": {
-    "semi": [2,"never"],
+    "semi": [2, "never"],
     "no-unexpected-multiline": 0,
     "babel/generator-star-spacing": 1,
     "babel/new-cap": 1,
@@ -15,7 +15,7 @@
   "env": {
     "es6": true,
     "node": true,
-    "browser": false
+    "browser": true
   },
   "plugins": [
     "babel"
