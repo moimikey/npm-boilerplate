@@ -19,14 +19,16 @@
     "fs": false
   },
   "scripts": {
-    "prebuild": "npm-run-all --sequential lint test clean",
+    "benchmark": "babel-node ./benchmark",
     "build": "babel --ignore *.spec.js -d lib src",
     "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
+    "dedupe":"npm dedupe",
     "lint": "eslint --cache src benchmark",
-    "prepublish": "npm-run-all --sequential build",
+    "prebuild": "npm-run-all --sequential lint test clean",
+    "prepublish": "npm-run-all --sequential prune dedupe build",
+    "prune":"npm prune",
     "test": "babel-tap -Rdump src/**/*.spec.js",
-    "test:watch": "nodemon -w src --exec babel-tap -Rspec src/**/*.spec.js",
-    "benchmark": "babel-node ./benchmark"
+    "test:watch": "nodemon -w src --exec babel-tap -Rspec src/**/*.spec.js"
   },
   "devDependencies": {
     "babel-cli": "6.7.5",
