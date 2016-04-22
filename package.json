@@ -31,7 +31,7 @@
     "test:watch": "nodemon -w src --exec babel-tap -Rspec src/**/*.spec.js"
   },
   "devDependencies": {
-    "babel-cli": "6.7.5",
+    "babel-cli": "6.7.7",
     "babel-core": "6.7.6",
     "babel-eslint": "6.0.3",
     "babel-plugin-transform-catch-promise": "0.1.2",
