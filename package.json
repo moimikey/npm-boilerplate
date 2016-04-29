@@ -42,7 +42,7 @@
     "babel-runtime": "6.6.1",
     "babel-tap": "5.0.0",
     "benchmark": "2.1.0",
-    "eslint": "2.8.0",
+    "eslint": "2.9.0",
     "eslint-plugin-babel": "3.2.0",
     "nodemon": "1.9.1",
     "npm-run-all": "1.8.0",
