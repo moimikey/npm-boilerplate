@@ -1,6 +1,8 @@
 {
   "plugins": [
     "transform-runtime"
+    "ramda",
+    "lodash"
   ],
   "presets": [
     "es2015",
