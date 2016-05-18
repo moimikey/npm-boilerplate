@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "babel-runtime": "6.9.0",
-    "bluebird": "3.3.5",
+    "bluebird": "3.4.0",
     "especially": "2.0.1",
     "eventemitter2": "1.0.3",
     "hasdom": "0.0.4",
