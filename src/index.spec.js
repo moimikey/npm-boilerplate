@@ -1,4 +1,4 @@
-import { typeov } from 'typeov'
+//import { typeov } from 'typeov'
 import tap from 'tap'
 
 const describe = tap.test
