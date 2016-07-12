@@ -25,7 +25,7 @@
   },
   "scripts": {
     "benchmark": "babel-node ./benchmark",
-    "build": "babel --ignore *.spec.js -d lib src",
+    "build": "babel --compact --ignore *.spec.js -d lib src",
     "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
     "dedupe": "npm dedupe",
     "lint": "eslint --cache src benchmark",
