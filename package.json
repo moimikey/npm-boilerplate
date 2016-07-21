@@ -75,6 +75,6 @@
     "yargs": "4.8.1"
   },
   "optionalDependencies": {
-    "benchmark": "2.1.0"
+    "benchmark": "2.1.1"
   }
 }
