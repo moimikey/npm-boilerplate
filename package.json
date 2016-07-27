@@ -59,7 +59,7 @@
     "babel-runtime": "6.9.2",
     "bluebird": "3.4.1",
     "especially": "2.0.1",
-    "eventemitter2": "2.0.0",
+    "eventemitter2": "2.0.1",
     "hasdom": "0.0.4",
     "isomorphic-fetch": "2.2.1",
     "lave": "1.1.10",
