@@ -51,7 +51,7 @@
     "capture-stream": "0.1.2",
     "eslint": "3.3.0",
     "eslint-plugin-babel": "3.3.0",
-    "nodemon": "1.10.0",
+    "nodemon": "1.10.1",
     "npm-run-all": "2.3.0",
     "rimraf": "2.5.4",
     "tap": "6.3.2"
