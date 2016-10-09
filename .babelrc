@@ -8,8 +8,7 @@
     "lodash"
   ],
   "presets": [
-    "es2015",
-    "es2016",
+    "latest",
     "stage-0"
   ]
 }
