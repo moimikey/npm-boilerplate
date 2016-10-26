@@ -25,7 +25,7 @@
     "clean": "rimraf .eslintcache {lib,build}/**/*.{js,log}",
     "lint": "eslint --cache src benchmark",
     "prebuild": "npm-run-all --sequential lint clean",
-    "prepublish": "npm-run-all --sequential test build",
+    "prepublishOnly": "npm-run-all --sequential test build",
     "test": "babel-tap --bail --no-color --reporter=tap src/**/*.spec.js",
     "test:dev": "babel-tap --bail src/**/*.spec.js",
     "test:watch": "nodemon -w src --exec npm run test:dev"
