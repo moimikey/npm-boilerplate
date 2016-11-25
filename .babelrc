@@ -1,12 +1,14 @@
 {
   "plugins": [
     ["transform-runtime", {
-      "polyfill": true,
-      "regenerator": true
+      "polyfill": false,
+      "regenerator": true,
     }]
   ],
   "presets": [
-    "latest",
+    ["latest", {
+      "strict": false
+    }],
     "stage-0"
   ]
 }

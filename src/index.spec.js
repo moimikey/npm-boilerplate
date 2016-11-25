@@ -1,17 +1,9 @@
-//import { typeov } from 'typeov'
 import tap from 'tap'
+import { typeov } from 'typeov'
 
-const describe = tap.test
+const test = tap.test
 
-describe('PACKAGE_NAME', i => {
-  const it = i.test
-
-  it('Logic', async t => {
-    // t.plan(2)
-    t.equal(true, true)
-    t.end()
-  })
-
-  i.end()
-
+test('the truth', t => {
+  t.equal(true, true, 'shall be known')
+  t.end()
 })
