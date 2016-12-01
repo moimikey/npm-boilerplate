@@ -31,8 +31,5 @@
   ],
   "modules": true,
   "root": true,
-  "globals": {
-    "param": true,
-    "returns": true
-  }
+  "globals": {}
 }
