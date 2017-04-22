@@ -1,5 +1,6 @@
-import tap from 'tap'
-import { typeov } from 'typeov'
+/* @flow */
+
+const tap = require('tap')
 
 const test = tap.test
 

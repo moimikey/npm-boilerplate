@@ -1,14 +1,14 @@
 {
+	"presets": [
+		["env", {
+			"targets": {
+				"node": "current",
+        "uglify": false
+			}
+		}],
+		"stage-0"
+	],
   "plugins": [
-    ["transform-runtime", {
-      "polyfill": false,
-      "regenerator": true
-    }]
-  ],
-  "presets": [
-    ["latest", {
-      "strict": false
-    }],
-    "stage-0"
+    "transform-flow-strip-types"
   ]
 }
