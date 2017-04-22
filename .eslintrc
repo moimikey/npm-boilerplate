@@ -1,35 +1,46 @@
 {
+  "env": {
+    "es6": true,
+    "node": true
+  },
   "extends": [
+    "plugin:flowtype/recommended",
     "eslint:recommended"
   ],
+  "modules": true,
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "sourceType": "module"
   },
+  "plugins": [
+    "babel",
+    "flowtype",
+    "flowtype-errors"
+  ],
+  "root": true,
   "rules": {
     "array-bracket-spacing": 1,
     "babel/arrow-parens": 0,
     "babel/new-cap": 1,
-    "babel/no-await-in-loop": 1,
     "babel/object-curly-spacing": 0,
+		"comma-dangle": ["error", "never"],
+    "flowtype-errors/show-errors": "error",
+		"flowtype/no-weak-types": "warn",
     "generator-star-spacing": 1,
     "no-console": 1,
+		"no-multi-assign": "warn",
+		"no-tabs": 2,
     "no-undef": 1,
     "no-unexpected-multiline": 0,
     "no-unused-vars": 1,
     "object-shorthand": 1,
-    "semi": [2,"never"]
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"]
   },
-  "env": {
-    "es6": true,
-    "node": true,
-    "commonjs": true
-  },
-  "plugins": [
-    "babel"
-  ],
-  "modules": true,
-  "root": true,
-  "globals": {}
+	"settings": {
+		"flowtype": {
+			"onlyFilesWithFlowAnnotation": true
+		}
+	}
 }

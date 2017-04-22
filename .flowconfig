@@ -1,0 +1,12 @@
+[options]
+module.system=haste
+
+[ignore]
+.*
+
+[include]
+<PROJECT_ROOT>/src/.*
+<PROJECT_ROOT>/node_modules/.*
+
+[version]
+^0.44.1
