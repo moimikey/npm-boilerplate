@@ -51,7 +51,6 @@
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
     "tap": "^10.3.2",
-    "to-factory": "1.0.0",
     "typeov": "1.2.4"
   },
   "resolutions": {

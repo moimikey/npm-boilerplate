@@ -3232,10 +3232,6 @@ tmatch@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/tmatch/-/tmatch-3.0.0.tgz#7d2071dedbbc587f194acda3067bd0747b670991"
 
-to-factory@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/to-factory/-/to-factory-1.0.0.tgz#8738af8bd97120ad1d4047972ada5563bf9479b1"
-
 to-fast-properties@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.2.tgz#f3f5c0c3ba7299a7ef99427e44633257ade43320"
