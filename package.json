@@ -22,15 +22,18 @@
   },
   "flat": true,
   "scripts": {
-    "build": "babel --compact --ignore *.spec.js -d lib src",
-    "clean": "rimraf .eslintcache *.log lib/**/*.{js,log}",
+    "build": "NPM_EXECPATH=yarn npm-run-all --sequential compile prepack uglify",
+    "compile": "babel --ignore *.spec.js -d lib src",
+    "clean": "rimraf .eslintcache *.log lib/**/*.{js,log,map}",
     "flow": "flow",
     "lint": "eslint --cache src",
-    "prebuild": "NPM_EXECPATH=yarn npm-run-all --sequential lint clean",
+    "prebuild": "NPM_EXECPATH=yarn npm-run-all --sequential clean lint",
+    "prepack": "prepack lib/index.js --out lib/index.js",
     "prepublishOnly": "NPM_EXECPATH=yarn npm-run-all --sequential test build",
     "test": "babel-tap --bail --no-color --reporter=spec src/**/*.spec.js",
     "test:dev": "babel-tap --bail src/**/*.spec.js",
-    "test:watch": "nodemon -w src --exec npm run test:dev"
+    "test:watch": "nodemon -w src --exec npm run test:dev",
+    "uglify": "uglifyjs --output lib/index.min.js --mangle --compress -- lib/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -49,9 +52,11 @@
     "flow-typed": "^2.1.2",
     "nodemon": "1.11.0",
     "npm-run-all": "^4.0.2",
+    "prepack": "^0.2.2",
     "rimraf": "^2.6.1",
     "tap": "^10.3.2",
-    "typeov": "1.2.4"
+    "typeov": "1.2.4",
+    "uglify-js": "^3.0.7"
   },
   "resolutions": {
     "rimraf": "2.6.1",
@@ -91,6 +96,7 @@
     "path-type": "2.0.0",
     "camelcase": "3.0.0",
     "cross-spawn": "5.1.0",
-    "async": "1.5.2"
+    "async": "1.5.2",
+    "uglify-js": "3.0.7"
   }
 }

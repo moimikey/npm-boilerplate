@@ -9,4 +9,4 @@ module.system=haste
 <PROJECT_ROOT>/node_modules/.*
 
 [version]
-^0.44.1
+^0.46.0
