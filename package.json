@@ -45,7 +45,7 @@
     "babel-tap": "5.0.0",
     "capture-stream": "0.1.2",
     "eslint": "^4.4.0",
-    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-babel": "^5.0.0",
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-flowtype-errors": "^3.2.1",
     "flow-bin": "^0.58.0",
