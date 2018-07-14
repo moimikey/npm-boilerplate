@@ -9,7 +9,7 @@ git clone https://github.com/moimikey/npm-boilerplate.git <new project name>
 cd <new project name>
 rm -rf .git
 git init
-yarn install
+npm install
 ```
 
 # Usage
@@ -17,9 +17,9 @@ yarn install
 * Replace all instances of `npm-boilerplate` in `package.json` and `README.md`
 * Select the appropriate license if not `MIT` in `LICENSE`
 * Pick a dope emoji to replace the `unicorn` 🦄
-* Tailor `.babelrc`, `.eslintrc`, `.editorconfig`, `.*ignore`, `.npm*`, `.travis*` to your needs
+* Tailor `.babelrc`, `.editorconfig`, `.*ignore`, `.npm*`, `.travis*` to your needs
 * Remove unnecessary dependencies from `package.json`
-* `yarn install`
+* `npm install`
 
 # License
 [![License][git-license-image]][git-license-url]
