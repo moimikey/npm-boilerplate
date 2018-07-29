@@ -17,8 +17,7 @@ npm install
 * Replace all instances of `npm-boilerplate` in `package.json` and `README.md`
 * Select the appropriate license if not `MIT` in `LICENSE`
 * Pick a dope emoji to replace the `unicorn` 🦄
-* Tailor `.babelrc`, `.editorconfig`, `.*ignore`, `.npm*`, `.travis*` to your needs
-* Remove unnecessary dependencies from `package.json`
+* Tailor `.babelrc`, `.editorconfig`, `.*ignore`, `.npm*`, to your needs
 * `npm install`
 
 # License
