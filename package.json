@@ -1,7 +1,7 @@
 {
   "name": "npm-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate realness",
+  "description": "💀 My boilerplate portable npm packages",
   "main": "index.js",
   "preferGlobal": false,
   "author": "Michael Scott Hertzberg <mshertzberg@gmail.com> (http://hertzber.gs/)",
@@ -15,36 +15,28 @@
   },
   "homepage": "https://github.com/moimikey/npm-boilerplate",
   "keywords": [
-    ""
+    "boilerplate"
   ],
   "scripts": {
-    "build": "npm-run-all -s compile prepack uglify",
+    "build": "npm-run-all -s compile",
     "compile": "babel --ignore *.spec.js -d lib src",
     "clean": "rimraf *.log lib/**/*.{js,log,map}",
-    "flow": "flow",
-    "lint": "standard src",
+    "lint": "standard src/**/*.js",
     "prebuild": "npm-run-all -s clean lint",
     "prepublishOnly": "npm-run-all -s test build",
-    "test": "babel-tap --bail --no-color --reporter=spec src/**/*.spec.js",
-    "test:dev": "babel-tap --bail src/**/*.spec.js",
-    "test:watch": "nodemon -w src --exec npm run test:dev"
+    "test:ci": "tap --bail --no-color --reporter=spec src/**/*.spec.js",
+    "test:watch": "nodemon -w src --exec npm run test:dev",
+    "test": "tap --bail src/**/*.spec.js"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.0.0",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-preset-env": "^1.4.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-tap": "5.0.0",
-    "capture-stream": "0.1.2",
-    "flow-bin": "^0.58.0",
-    "flow-typed": "^2.1.2",
-    "nodemon": "1.14.8",
+    "nodemon": "^1.18.3",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
     "standard": "11.0.1",
-    "tap": "^10.3.2",
+    "tap": "^12.0.1",
     "typeov": "1.2.4"
   }
 }
