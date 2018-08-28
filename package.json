@@ -31,7 +31,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
-    "babel-eslint": "^8.0.0",
+    "babel-eslint": "^9.0.0",
     "nodemon": "^1.18.3",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
